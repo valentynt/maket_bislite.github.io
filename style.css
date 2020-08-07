@@ -1,0 +1,722 @@
+@font-face {
+    font-family: 'Arial MT';
+    src: url('fonts/ArialMT/subset-ArialMT.eot');
+    src: url('fonts/ArialMT/subset-ArialMT.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ArialMT/subset-ArialMT.woff2') format('woff2'),
+        url('fonts/ArialMT/subset-ArialMT.woff') format('woff'),
+        url('fonts/ArialMT/subset-ArialMT.ttf') format('truetype'),
+        url('fonts/ArialMT/subset-ArialMT.svg#ArialMT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial_BoldMT';
+    src: url('fonts/Arial_BoldMT/subset-Arial-BoldMT.eot');
+    src: url('fonts/Arial_BoldMT/subset-Arial-BoldMT.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Arial_BoldMT/subset-Arial-BoldMT.woff2') format('woff2'),
+        url('fonts/Arial_BoldMT/subset-Arial-BoldMT.woff') format('woff'),
+        url('fonts/Arial_BoldMT/subset-Arial-BoldMT.ttf') format('truetype'),
+        url('fonts/Arial_BoldMT/subset-Arial-BoldMT.svg#Arial-BoldMT') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato_Black';
+    src: url('fonts/Lato_Black/subset-Lato-Black.eot');
+    src: url('fonts/Lato_Black/subset-Lato-Black.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Lato_Black/subset-Lato-Black.woff2') format('woff2'),
+        url('fonts/Lato_Black/subset-Lato-Black.woff') format('woff'),
+        url('fonts/Lato_Black/subset-Lato-Black.ttf') format('truetype'),
+        url('fonts/Lato_Black/subset-Lato-Black.svg#Lato-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato_Bold';
+    src: url('fonts/Lato_Bold/subset-Lato-Bold.eot');
+    src: url('fonts/Lato_Bold/subset-Lato-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Lato_Bold/subset-Lato-Bold.woff2') format('woff2'),
+        url('fonts/Lato_Bold/subset-Lato-Bold.woff') format('woff'),
+        url('fonts/Lato_Bold/subset-Lato-Bold.ttf') format('truetype'),
+        url('fonts/Lato_Bold/subset-Lato-Bold.svg#Lato-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato_Regular';
+    src: url('fonts/Lato_Regular/subset-Lato-Regular.eot');
+    src: url('fonts/Lato_Regular/subset-Lato-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Lato_Regular/subset-Lato-Regular.woff2') format('woff2'),
+        url('fonts/Lato_Regular/subset-Lato-Regular.woff') format('woff'),
+        url('fonts/Lato_Regular/subset-Lato-Regular.ttf') format('truetype'),
+        url('fonts/Lato_Regular/subset-Lato-Regular.svg#Lato-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial_Bold_Italic_MT';
+    src: url('fonts/Arial_Bold_Italic_MT/subset-Arial-BoldItalicMT.eot');
+    src: url('fonts/Arial_Bold_Italic_MT/subset-Arial-BoldItalicMT.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Arial_Bold_Italic_MT/subset-Arial-BoldItalicMT.woff2') format('woff2'),
+        url('fonts/Arial_Bold_Italic_MT/subset-Arial-BoldItalicMT.woff') format('woff'),
+        url('fonts/Arial_Bold_Italic_MT/subset-Arial-BoldItalicMT.ttf') format('truetype'),
+        url('fonts/Arial_Bold_Italic_MT/subset-Arial-BoldItalicMT.svg#Arial-BoldItalicMT') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial MT',sans-serif; 
+}
+
+.header{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #e8ebf1;
+    padding-bottom: 37px;
+}
+
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block; 
+}
+
+.container{
+    max-width: 1008px;
+    margin: 0 auto;
+}
+
+.logo{
+    color: #2aacc8;
+    font-family: 'Lato_Regular',sans-serif;
+    line-height: 58px;
+    font-size: 50px;
+    float: left;
+    width: 148px;
+    margin-top: 26px;
+}
+
+.sub-logo{
+    color: #000000;
+    font-family: 'Lato_Black',sans-serif;
+    line-height: 58px;
+    font-size: 50px;
+}
+
+.nav{
+    width: 652px;
+    float: right;
+    margin-top: 45px;
+}
+
+.menu-item .submenu{
+    display: none;
+}
+
+.menu-item{
+    float: left;
+    position: relative;
+}
+
+.link{
+    border-top: 5px solid transparent;
+    margin-right: 10px;
+    display: block;
+    padding-left: 12px;
+    padding-right: 25px;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.menu-item:last-child{
+    margin-right: 0px;
+}
+
+.menu-item:hover .submenu{
+    display: block;
+}
+
+.menu-item .link{
+    color: #000000;
+    font-family: 'Arial_BoldMT',sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.menu-item:hover .link{
+    color: #2aacc8;
+    background-color: #ffffff;
+    border-top: 5px solid #2aacc8;
+}
+
+.drop_servis{
+    background-image: url('icons/down_arrow.png');
+    background-repeat: no-repeat;
+    background-position: 85px 14px;
+}
+
+.drop_portfolio{
+    background-image: url('icons/down_arrow.png');
+    background-repeat: no-repeat;
+    background-position: 96px 14px;
+}
+
+.submenu{
+    position: absolute;
+    width: 199px;
+    top:100%;
+    box-shadow: 0 5px 0 #2aacc8;
+    border-bottom: 1px solid #e8ebf1;
+    background-color: #ffffff;
+}
+
+.sub-link{
+    display: block;
+    padding-left: 12px;
+    border-bottom: 1px solid #e7e7e7;
+    text-decoration: none;
+}
+
+.submenu-item .sub-link{
+    color: #000000;
+    font-size: 13px;
+    line-height: 36px;
+}
+
+.submenu-item a:hover{
+    color: #2aacc8;
+}
+
+.triple{
+    background-color: #81e4ed;
+    padding-top: 20px;
+}
+
+.chat{
+    height: 440px;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.12);
+    background-color: #e05936;
+    background-image: url('images/chat2.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.cup{
+    padding-top: 3px;
+    margin-left: 64px;
+}
+
+.text_cup{
+    width: 294px;
+    height: 219px;
+    color: #ffffff;
+    font-family: 'Lato_Bold';
+    font-size: 50px;
+    margin-left: 61px;
+    margin-top: 100px;
+    float: left;
+}
+
+.rounds{
+   padding: 12px 0 14px 0;
+   text-align: center;
+}
+
+.sub-rounds{
+    width: 14px;
+    height: 14px;
+    background-color: #626262;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 17px;
+}
+
+.sub-rounds:last-child{
+    margin-right: 0px; 
+}
+
+.sub-rounds:hover{
+    background-color: #ffffff;
+}
+
+.four{
+    padding-top: 60px;
+}
+
+.cards{
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.07);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #e8ebf1;
+    padding-bottom: 47px;
+    margin-bottom: 20px;
+}
+
+.card{
+    width: 219px;
+    float: left;
+    margin-right: 44px;
+}
+
+.card:last-child{
+    margin-right: 0px;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+    background-color: #2aacc8;
+    border-radius: 50%;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pen{
+    background-image: url('icons/pen.png');
+    background-size: 20px 22px;
+}
+
+.window{
+    background-image: url('icons/window.png');
+    background-size: 21px 17px; 
+}
+
+.lines{
+    background-image: url('icons/lines.png');
+    background-size: 16px 16px; 
+}
+
+.telegram{
+    background-image: url('icons/telegram.png');
+    background-position: 70%;
+    background-size: 26px 24px; 
+}
+
+.title{
+    color: #000000;
+    font-family: 'Arial_BoldMT',sans-serif;
+    font-size: 15px;;
+    line-height: 20px;
+    text-transform: uppercase;
+    float: left;
+    margin-top: 9px;
+    margin-bottom: 34px;
+    margin-left: 19px;
+}
+
+.sub-pen{
+    margin-right: 49px;
+}
+
+.text{
+    color: #363636;
+    font-size: 13px;
+    line-height: 20px;   
+}
+
+.text-card{
+    margin-bottom: 23px;
+}
+
+.link_card{
+    text-decoration: none;
+    color: #2aacc8;
+    background-image: url('icons/arrow_right.png');
+    background-repeat: no-repeat;
+    padding-left: 14px;
+    background-position: left;
+}
+
+.works{
+    padding-left: 40px;
+    background-image: url('icons/cursor.png');
+    background-repeat: no-repeat;
+    margin: 0;
+    float: left;
+}
+
+.sub-arrow{
+    height: 20px;
+    float: right;
+    padding: 0;
+}
+
+.arrow{
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    background-color: #81e4ed;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: top;
+    background-image: url('icons/arrow_left.png');
+    background-repeat: no-repeat;
+    background-position: 45%;
+}
+
+.second{
+    background-image: url('icons/arrow_right.png');
+    background-position: 55%;
+    margin-left: 11px;
+}
+
+.arrows{
+    margin-bottom: 15px;
+}
+
+.images{
+    border-top: 1px solid #dfe1e5;
+    border-bottom: 1px solid #dfe1e5;
+    padding: 20px 0 40px 0;
+}
+
+.image{
+    width: 220px;
+    height: 160px;
+    background-repeat: no-repeat;
+    float: left;
+    margin-right: 42px;
+    position: relative;
+}
+
+.image:last-child{
+    margin-right: 0;
+    float: right;
+}
+
+.image .sub-image{
+    display: none;
+}
+
+.image:hover .sub-image{
+    display: block;
+}
+
+.sub-image{
+    position: absolute;
+    bottom: 0;
+    height: 81px;
+    width: 220px;
+    background-color: #2aacc8;
+}
+
+.notepad{
+    background-image: url('images/notepad.jpg');
+}
+
+.lemon{
+    background-image: url('images/lemon.jpg');
+}
+
+.figures{
+    background-image: url('images/figures.jpg');
+}
+
+.target{
+    background-image: url('images/target.jpg');
+}
+
+.eye , .chain{
+    padding: 0;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 0;
+}
+
+.eye{
+    float: left;
+    margin: 24px 0 0 69px;
+}
+
+.chain{
+    float: right;
+    margin: 24px 61px 0 0;
+}
+
+.paints{
+    margin-bottom: 21px;
+}
+
+.testimonials{
+    max-width: 425px;
+    float: left;
+}
+
+.sub-testimonials{
+    padding-left: 40px;
+    background-image: url('icons/comments.png');
+    background-repeat: no-repeat;
+    float: left;
+    margin: 0 270px 13px 0;
+}
+
+.text-testimonials{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 28px;
+}
+
+.text-john{
+    font-family: 'Arial_Bold_Italic_MT';
+}
+
+.our_clients{
+    float: right;
+    margin-bottom: 41px;
+}
+
+.sub-our_clients{
+    padding: 0 0 0 40px;
+    background-image: url('icons/clients.png');
+    position: 0;
+    background-repeat: no-repeat;
+    float: left;
+    margin: 0 270px 13px 0;
+}
+
+.sub-brands{
+    width: 483px;
+}
+
+.brands-img{
+    width: 161px;
+    height: 101px;
+    box-shadow: inset 0 0 25px #e8ebf1;
+    border: 1px solid #e8ebf1;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left
+}
+
+.cox{
+    background-image: url('images/cox.jpg');
+}
+
+.cnn{
+    background-image: url('images/cnn.jpg');
+}
+
+.apartmen{
+    background-image: url('images/Apartmen_Finder.jpg');
+}
+
+.deere{
+    background-image: url('images/John_Deere.jpg'); 
+}
+
+.banana{
+    background-image: url('images/Banana_Boat.jpg'); 
+}
+
+.fujifilm{
+    background-image: url('images/FUJIFILM.jpg');
+}
+
+.psd{
+    margin-bottom: 40px;
+}
+
+.download{
+    width: 1008px;
+    border: 1px solid #81e4ed;
+    background-color: #e8fcfe;
+    padding: 32px 40px 30px 31px;
+}
+
+.sub_download{
+    width: 607px;
+    color: #363636;
+    font-size: 16px;
+    line-height: 26px;
+    float: left;
+}
+
+.download_psd{
+    width: 242px;
+    height: 60px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2), inset 0 2px 1px rgba(255, 255, 255, 0.1);
+    border: 1px solid #2aacc8;
+    background-color: #2aacc8;
+    background-image: url('icons/download.png'),linear-gradient(to top, #2aacc8 0%, #60cede 15%, #72dae6 50%, #81e4ed 100%);
+    background-repeat: no-repeat;
+    background-position: 10%;
+    border-radius: 10px;
+    display: block;
+    padding: 22px 20px 21px 71px;;
+    color: #0d0707;
+    font-family: 'Arial_BoldMT',sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    float: right;
+    margin-top: 5px;
+    margin-right: 0;
+}
+
+.footer{
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #e8ebf1;
+}
+
+.about{
+    padding-top: 29px;
+}
+
+.ab{
+    margin: 0 68px 0 0;
+}
+
+.ab:last-child{
+    margin-right: 0;
+}
+
+.about_us{
+    width: 232px;
+    float: left;
+    margin-bottom: 38px;
+}
+
+.sub-about_us{
+    margin: 0 150px 23px 0;
+}
+
+.sub-us{
+    margin-bottom: 0;
+}
+
+.link_footer{
+    text-decoration: none;
+    color: #363636;
+}
+
+.explore{
+    width: 71px;
+    float: left;
+}
+
+.explore-short{
+    margin: 0 0 10px 0;
+}
+
+.sub-explore{
+    line-height: 26px;
+    margin-bottom: 0;
+}
+
+.browse{
+    width: 104px;
+    float: left;
+}
+
+.browse-short{
+    margin: 0 0 10px 0;
+}
+
+.sub-browse{
+    line-height: 26px;
+    margin-bottom: 0;
+}
+
+.contact_us{
+    width: 135px;
+    float: left;
+}
+
+.contact-short{
+    margin: 0 0 16px 0;
+}
+
+.bislite_inc{
+    font-family: 'Arial_BoldMT',sans-serif; 
+}
+
+.sub-contact-phone{
+    margin-bottom: 0;
+}
+
+.connect_with_us{
+    float: left;
+    margin-right: 0;
+}
+
+.with_us-short{
+    margin: 0 0 18px 9px;
+}
+
+.litle_icons{
+    width: 193px;
+    padding: 0;
+}
+
+.sub-litle_icons{
+    width: 53px;
+    height: 51px;
+    float: left;
+    margin-right: 17px;
+}
+
+.facebook{
+    background-image: url('images/facebook.png');
+}
+
+.dribbble{
+    background-image: url('images/dribbble.png');
+}
+
+.pinterest{
+    background-image: url('images/pinterest.png');
+    margin-right: 0;
+}
+
+.linkedin{
+    background-image: url('images/linkedin.png');
+    margin-top: 9px;
+}
+
+.skype{
+    background-image: url('images/skype.png');
+    margin-top: 9px;
+}
+
+.share{
+    background-image: url('images/share.png');
+    margin: 9px 0 0 0;
+}
+
+.copy{
+    padding-bottom: 43px;
+}
+
+.copyright{
+    float: left;
+    width: 640px;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 2px 0 0 0;
+}
+
+.logo-bottom{
+    float: right;
+    width: 148px;
+    height: 37px;
+    display: block;
+}

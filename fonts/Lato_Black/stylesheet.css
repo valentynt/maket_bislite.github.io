@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('subset-Lato-Black.eot');
+    src: url('subset-Lato-Black.eot?#iefix') format('embedded-opentype'),
+        url('subset-Lato-Black.woff2') format('woff2'),
+        url('subset-Lato-Black.woff') format('woff'),
+        url('subset-Lato-Black.ttf') format('truetype'),
+        url('subset-Lato-Black.svg#Lato-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+

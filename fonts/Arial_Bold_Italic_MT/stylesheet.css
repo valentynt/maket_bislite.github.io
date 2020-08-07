@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Arial MT';
+    src: url('subset-Arial-BoldItalicMT.eot');
+    src: url('subset-Arial-BoldItalicMT.eot?#iefix') format('embedded-opentype'),
+        url('subset-Arial-BoldItalicMT.woff2') format('woff2'),
+        url('subset-Arial-BoldItalicMT.woff') format('woff'),
+        url('subset-Arial-BoldItalicMT.ttf') format('truetype'),
+        url('subset-Arial-BoldItalicMT.svg#Arial-BoldItalicMT') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Arial MT';
+    src: url('subset-ArialMT.eot');
+    src: url('subset-ArialMT.eot?#iefix') format('embedded-opentype'),
+        url('subset-ArialMT.woff2') format('woff2'),
+        url('subset-ArialMT.woff') format('woff'),
+        url('subset-ArialMT.ttf') format('truetype'),
+        url('subset-ArialMT.svg#ArialMT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
